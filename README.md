@@ -10,7 +10,8 @@ Prefer to use your package manager on Linux. You will have to manually download 
 - (Windows only) [MinGW-w64](https://www.mingw-w64.org/)
 - (Windows only) If not already done, set the environment variable `CUDA_PATH` to the folder containing the folder `bin`.
 - (Windows only) Add the path to openblas's `include` folder to the environment variable `???`.
-- (Windows only) Add the path to MinGW-w64's and CUDA's `bin` folders to your PATH.
+- (Windows only) Add the path to openblas's, MinGW-w64 and CUDA's `lib` folders to the environment variable `???`.
+- (Windows only) Add the path to MinGW-w64's and CUDA's `bin` folders to your `PATH`.
 
 ## Installation
 
