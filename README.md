@@ -2,16 +2,11 @@
 
 ## Requirements
 
-Prefer to use your package manager on Linux. You will have to manually download everything for Windows. MacOS is not officially supported by CUDA.
+Prefer to use your package manager on Linux instead of manually installing each program.
 - [Python](https://www.python.org/downloads/)
 - [CUDA](https://developer.nvidia.com/cuda-downloads) and [cudNN](https://developer.nvidia.com/rdp/cudnn-download) (make sure you have matching cudNN and CUDA versions)
 - [openblas](https://www.openblas.net/)
-- (Linux only) `cblas` package
-- (Windows only) [MinGW-w64](https://www.mingw-w64.org/)
-- (Windows only) If not already done, set the environment variable `CUDA_PATH` to the folder containing the folder `bin`.
-- (Windows only) Add the path to openblas's `include` folder to the environment variable `???`.
-- (Windows only) Add the path to openblas's, MinGW-w64 and CUDA's `lib` folders to the environment variable `???`.
-- (Windows only) Add the path to MinGW-w64's and CUDA's `bin` folders to your `PATH`.
+- `cblas` package
 
 ## Installation
 
@@ -22,8 +17,7 @@ git clone https://...
 2. Create a virtual environment and source it
 ```
 python -m venv env
-source env/bin/activate (Linux)
-env/bin/acivate.ps1 (Windows)
+source env/bin/activate
 ```
 3. Install the pip requirements
 ```
