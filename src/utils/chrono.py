@@ -1,5 +1,9 @@
 from time import time
 
+"""
+    This is a helper class to compute timings
+    via Python's with statement.
+"""
 class Chrono:
     start: float
     end: float

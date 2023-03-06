@@ -5,6 +5,11 @@
 
 #include "./utils/chrono.cpp"
 
+/*
+    This is the basic matrix multiplication, the default
+    way to compute it. It is the slowest method on C++.
+*/
+
 static const std::string file = std::filesystem::path(__FILE__).filename();
 
 struct Matrix {
@@ -19,6 +24,7 @@ Matrix random_matrix(std::size_t n)
         .size = n
     };
 
+    // This is for generating a random matrix
     std::mt19937 gen(std::random_device{}());
     std::uniform_real_distribution<float> urd(0.0, 1.0);
     for (std::size_t i = 0; i < n * n; i++)

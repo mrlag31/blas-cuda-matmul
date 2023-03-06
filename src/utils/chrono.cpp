@@ -2,6 +2,10 @@
 #include <iostream>
 #include <iomanip>
 
+/*
+    This is a helper class to compute timings
+    via RAII, kind of like Python's with statement.
+*/
 class Chrono {
 public:
     struct Ref {

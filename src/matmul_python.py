@@ -4,6 +4,11 @@ from random import random
 
 from utils.chrono import Chrono
 
+"""
+    This is the basic matrix multiplication, the default
+    way to compute it. It is the slowest method.
+"""
+
 FILE = path.basename(__file__)
 
 class Matrix:

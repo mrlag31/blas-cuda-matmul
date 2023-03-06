@@ -3,7 +3,14 @@ environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 
 from utils.chrono import Chrono
-from time import time
+
+"""
+    This is how someone will fo a matrix multiplication
+    in Python using numpy. It is the fastest on Python.
+    
+    As seen in the table, this has an overhead. Without it,
+    it should be as fast as the CuBLAS one.
+"""
 
 FILE = path.basename(__file__)
 

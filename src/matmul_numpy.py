@@ -4,6 +4,12 @@ import numpy as np
 
 from utils.chrono import Chrono
 
+"""
+    This is how someone will fo a matrix multiplication
+    in Python using numpy. It is the fastest on Python
+    and on CPU.
+"""
+
 FILE = path.basename(__file__)
 
 def random_matrix(n: int) -> NDArray[np.float32]:

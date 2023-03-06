@@ -6,6 +6,11 @@
 #include "./utils/chrono.cpp"
 #include "cblas.h"
 
+/*
+    This is the matrix multiplication using OpenBLAS.
+    It is the fastest method on the CPU.
+*/
+
 static const std::string file = std::filesystem::path(__FILE__).filename();
 
 struct Matrix {
@@ -20,6 +25,7 @@ Matrix random_matrix(std::size_t n)
         .size = n
     };
 
+    // This is for generating a random matrix
     std::mt19937 gen(std::random_device{}());
     std::uniform_real_distribution<float> urd(0.0, 1.0);
     for (std::size_t i = 0; i < n * n; i++)
@@ -37,6 +43,7 @@ Matrix matmul(const Matrix& a, const Matrix& b)
         .size = n
     };
 
+    // BLAS call. alpha (1.0) and beta (0.0) are values
     cblas_sgemm(
         CblasRowMajor, CblasNoTrans, CblasNoTrans,
         n, n, n,
